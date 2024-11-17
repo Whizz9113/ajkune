@@ -7,7 +7,7 @@ export function ImpressumSection() {
     <section className="pt-32 pb-20">
       <div className="container mx-auto px-4">
         <motion.div 
-          className="w-full max-w-4xl mx-auto"
+          className="w-full max-w-4xl"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -31,9 +31,9 @@ export function ImpressumSection() {
             <div>
               <h2 className="text-xl font-bold mb-4">Kontakt</h2>
               <p className="text-gray-600">
-                Telefon: +41 62 771 07 05<br />
-                E-Mail: info@coiffeurajkune.ch<br />
-                Website: www.ajkune-professional.ch
+                Telefon: <a href="tel:+41627710705" className="hover:text-[#fe23d9] transition-colors">+41 62 771 07 05</a><br />
+                E-Mail: <a href="mailto:info@coiffeurajkune.ch" className="hover:text-[#fe23d9] transition-colors">info@coiffeurajkune.ch</a><br />
+                Website: <a href="https://www.ajkune-professional.ch" target="_blank" rel="noopener noreferrer" className="hover:text-[#fe23d9] transition-colors">www.ajkune-professional.ch</a>
               </p>
             </div>
 
@@ -68,9 +68,9 @@ export function ImpressumSection() {
                 8180 Bülach<br />
                 Schweiz<br />
                 <br />
-                Telefon: +4176 542 44 82<br />
-                info@webdevian.ch<br />
-                www.webdevian.ch
+                Telefon: <a href="tel:+41765424482" className="hover:text-[#fe23d9] transition-colors">+41 76 542 44 82</a><br />
+                E-Mail: <a href="mailto:info@webdevian.ch" className="hover:text-[#fe23d9] transition-colors">info@webdevian.ch</a><br />
+                Website: <a href="https://www.webdevian.ch" target="_blank" rel="noopener noreferrer" className="hover:text-[#fe23d9] transition-colors">www.webdevian.ch</a>
               </p>
             </div>
 
@@ -78,7 +78,15 @@ export function ImpressumSection() {
               <h2 className="text-xl font-bold mb-4">Streitschlichtung</h2>
               <p className="text-gray-600">
                 Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: 
-                https://ec.europa.eu/consumers/odr.<br />
+                <a 
+                  href="https://ec.europa.eu/consumers/odr" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-[#fe23d9] transition-colors ml-1"
+                >
+                  https://ec.europa.eu/consumers/odr
+                </a>
+                <br />
                 Unsere E-Mail-Adresse finden Sie oben im Impressum.
               </p>
               <p className="text-gray-600 mt-4">
